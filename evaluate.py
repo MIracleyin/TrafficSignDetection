@@ -142,8 +142,9 @@ def main():
     img_dir = f"{data_dir}/TEST_A"
     classnames = CLASSNAMES
     checkpoint_path = f"/Myhome/datasets/tt100k_2021/checkpoints/checkpoint_{epoch}.pkl"
-    save_path = f"{data_dir}/trafficsign_20"
+    save_path = f"{data_dir}/trafficsign"
     run_images(img_dir,classnames,checkpoint_path,save_path)
 
 if __name__ == "__main__":
     main()
+
