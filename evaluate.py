@@ -137,14 +137,13 @@ def plot_aps(aps_json):
 
 def main():
     jt.flags.use_cuda=1
-    data_dir = "/data/lxl/dataset/tt100k"
-    epoch = 15
+    data_dir = "/Myhome/datasets/tt100k_2021"
+    epoch = 20
     img_dir = f"{data_dir}/TEST_A"
     classnames = CLASSNAMES
-    checkpoint_path = f"/data/lxl/dataset/tt100k/tt100k_2021/checkpoints/checkpoint_{epoch}.pkl"
-    save_path = f"{data_dir}/trafficsign"
+    checkpoint_path = f"/Myhome/datasets/tt100k_2021/checkpoints/checkpoint_{epoch}.pkl"
+    save_path = f"{data_dir}/trafficsign_20"
     run_images(img_dir,classnames,checkpoint_path,save_path)
 
 if __name__ == "__main__":
     main()
-
