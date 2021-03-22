@@ -114,7 +114,7 @@ def select_empty_images(other_dir,annos):
     return empty_files
             
 def build_annotations():
-    data_dir = "/data/lxl/dataset/tt100k/tt100k_2021"
+    data_dir = "/Myhome/datasets/tt100k_2021"
     mark_dir = f"{data_dir}/crop_marks"
     remark_dir = f"{data_dir}/re_marks"
     anno_f = f"{data_dir}/annotations_all.json"
@@ -223,7 +223,7 @@ def draw_boxes(img,boxes,classnames,color=(255,0,0)):
     return img
 
 def test():
-    data_dir = "/data/lxl/dataset/tt100k/tt100k_2021"
+    data_dir = "/Myhome/datasets/tt100k_2021" # ni
     tmp_dir = "./tmp"
     os.makedirs(tmp_dir,exist_ok=True)
     anno_f = data_dir+"/annotations_aug.json"
